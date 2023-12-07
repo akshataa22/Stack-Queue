@@ -19,11 +19,24 @@ public class StackQueue {
             rear = newNode;
         }
     }
+
+    public void remove() {
+        if (front == null) {
+            System.out.println("Queue is empty.");
+        } else {
+            while (front != null) {
+                front = front.next;
+            }
+
+        }
+    }
+
     public void displayQueue(){
         Node newNode = front;
         while(newNode != null){
             System.out.print(newNode.data+ "-->");
             newNode = newNode.next;
         }
+        System.out.println("Queue is empty.");
     }
 }
