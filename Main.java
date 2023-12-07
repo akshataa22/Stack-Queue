@@ -2,15 +2,11 @@ package Day_14;
 
 public class Main {
     public static void main(String[] args) {
-        StackQueue s = new StackQueue();
-        s.push(70);
-        s.push(30);
-        s.push(56);
+        StackQueue q = new StackQueue();
 
-        while(!s.isEmpty()){
-            System.out.println(s.peek());
-            s.pop();
-        }
-        s.displayStack();
+        q.add(56);
+        q.add(30);
+        q.add(70);
+        q.displayQueue();
     }
 }
