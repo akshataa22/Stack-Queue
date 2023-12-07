@@ -7,6 +7,10 @@ public class Main {
         s.push(30);
         s.push(56);
 
+        while(!s.isEmpty()){
+            System.out.println(s.peek());
+            s.pop();
+        }
         s.displayStack();
     }
 }
